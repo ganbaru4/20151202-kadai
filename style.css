@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  background: #fff;
+  font: 30px sans-serif;
+  color: #000;
+}
+.slider{
+  position:relative;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.slide{
+  /*  position:absolute;*/
+  top:0;
+  left:0;
+}
+.slide img{
+  display: block;
+}
+.slide:nth-child(n+2){
+  display: none;
+}
+.slide.active{
+  display: block !important;
+}
